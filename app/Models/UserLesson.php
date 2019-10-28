@@ -12,4 +12,14 @@ class UserLesson extends Model
         'lesson_id',
         'status',
     ];
+
+    public function lesson()
+    {
+        return $this->belongsTo(Lesson::class,'lesson_id','id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class,'user_id','id');
+    }
 }

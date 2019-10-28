@@ -12,4 +12,9 @@ class Course extends Model
         'description',
         'image_url',
     ];
+
+    public function lessons()
+    {
+        return $this->hasMany(Lesson::class,'course_id','id');
+    }
 }
