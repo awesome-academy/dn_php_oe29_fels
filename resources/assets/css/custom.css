@@ -1,0 +1,80 @@
+.wrap {
+    background-image: url('../../images/bgimage.png');
+    width: 100%;height: 800px;
+    background-size: cover;
+}
+
+.course {
+    height: 350px;
+}
+
+.pic-list {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.alert-required {
+    color: red;
+    font-size: 16px;
+}
+
+.message-error {
+    color: red;
+    font-size : 12px;
+    font-weight: bold;
+}
+
+/*sidenav*/
+
+.sidenav {
+    height: 744px;
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Add an active class to the active dropdown button */
+.sidenav .active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+/*sidenav*/

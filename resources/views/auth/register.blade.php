@@ -9,7 +9,7 @@
                         @lang('messages.register')
                     </div>
                     <div class="card-body">
-                        <form action="#" method="POST">
+                        <form action="{{route('register')}}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label> @lang('messages.fullname_label') <span class="alert-required">*</span></label>
