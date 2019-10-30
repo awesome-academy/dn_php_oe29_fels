@@ -11,13 +11,13 @@
         <ul class="navbar-nav mr-auto float-right">
             @guest
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">
+                    <a class="nav-link text-uppercase" href="{{route('register')}}">
                         <i class="fa fa-user-plus"></i>
                         @lang('messages.signup')
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-uppercase" href="#">
+                    <a class="nav-link text-uppercase" href="{{route('login')}}">
                         <i class="fas fa-sign-in-alt"></i>
                         @lang('messages.signin')
                     </a>
@@ -39,7 +39,7 @@
                         <a class="dropdown-item" href="#"> @lang('messages.setting') </a>
                         <a class="dropdown-item" href="#"> @lang('messages.change_password')</a>
                         <div class="dropdown-divider"> @lang('messages.logout') </div>
-                        <a class="dropdown-item" href="#" id="logout" data-csrf="{{csrf_token()}}">
+                        <a class="dropdown-item" id="logout" data-csrf="{{csrf_token()}}">
                             Logout
                         </a>
                     </div>

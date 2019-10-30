@@ -9,7 +9,7 @@
                         @lang('messages.login')
                     </div>
                     <div class="card-body">
-                        <form action="#" method="POST">
+                        <form action="{{route('login')}}" method="POST">
                             @csrf
                             <div class="form-group">
                                 <label> @lang('messages.email_label') </label>
@@ -33,7 +33,7 @@
                                 @enderror
                             </div>
                             <button type="submit" class="btn btn-warning text-white">
-                                @lang('messages.login_button')
+                                @lang('messages.login')
                             </button>
                         </form>
                     </div>

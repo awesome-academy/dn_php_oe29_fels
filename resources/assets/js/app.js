@@ -1,3 +1,5 @@
+require('./bootstrap');
+
 $(document).on('click', '#logout', function (event) {
     event.preventDefault();
     $.ajax({
