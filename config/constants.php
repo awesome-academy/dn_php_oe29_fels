@@ -15,4 +15,14 @@ return [
         'correct' => 1,
         'incorrect' => 0,
     ],
+    'page_limit' => [
+        'course' => 5,
+        'course_front' => 20,
+    ],
+    'textarea' => [
+        'course' => [
+            'col' => 30,
+            'row' => 10,
+        ],
+    ]
 ];

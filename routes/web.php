@@ -19,4 +19,5 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', 'HomeController@admin')->name('admin');
+    Route::resource('courses', 'Admin\CourseController');
 });
