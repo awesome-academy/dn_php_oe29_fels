@@ -29,6 +29,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#"> @lang('messages.member') </a>
                 </li>
+                @if(Auth::user()->role == config('constants.role.admin'))
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('admin')}}"> @lang('messages.manage_system') </a>
+                    </li>
+                @endif
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +44,7 @@
                         <a class="dropdown-item" href="#"> @lang('messages.setting') </a>
                         <a class="dropdown-item" href="#"> @lang('messages.change_password')</a>
                         <div class="dropdown-divider"> @lang('messages.logout') </div>
-                        <a class="dropdown-item" id="logout" data-csrf="{{csrf_token()}}">
+                        <a class="dropdown-item" href="" id="logout" data-csrf="{{csrf_token()}}">
                             Logout
                         </a>
                     </div>
