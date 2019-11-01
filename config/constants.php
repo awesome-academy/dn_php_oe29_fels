@@ -17,6 +17,7 @@ return [
     ],
     'page_limit' => [
         'course' => 5,
+        'lesson' => 10,
         'course_front' => 20,
     ],
     'textarea' => [
