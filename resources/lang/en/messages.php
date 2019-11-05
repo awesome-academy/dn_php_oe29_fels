@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'back' => 'Back',
     'stt' => 'STT',
     'login' => 'Login',
     'register' => 'Register',
@@ -32,6 +33,12 @@ return [
     'edit_course' => 'Edit Course',
     'user' => 'User',
     'add' => 'Add',
+    'add_new' => 'Add New',
     'list' => 'List',
     'title_app_admin' => 'Manage System',
+    'lesson' => 'Lesson',
+    'add_lesson' => 'Add Lesson',
+    'edit_lesson' => 'Edit Lesson',
+    'list_lesson' => 'List Lesson',
+    'choose_course' => '-- Choose Course --',
 ];

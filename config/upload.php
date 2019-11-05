@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'disk_name',
+    'disk_name' => 'public',
     'path' => [
         'course' => 'upload/courses',
     ],

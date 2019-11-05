@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Lesson;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateCourseRequest extends FormRequest
+class UpdateLessonRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,7 +25,7 @@ class UpdateCourseRequest extends FormRequest
     {
         return [
             'title' => 'required',
-            'image_url' => 'bail|file|image|mimes:png,jpg,jpeg|max:2048',
+            'course_id' => 'required',
         ];
     }
 }
