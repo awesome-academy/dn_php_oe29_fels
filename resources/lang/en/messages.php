@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'stt' => 'STT',
     'login' => 'Login',
     'register' => 'Register',
     'logout' => 'Logout',
@@ -19,6 +20,16 @@ return [
     'setting' => 'Setting',
     'change_password' => 'Change Password',
     'course' => 'Course',
+    'add_course' => 'Add Course',
+    'title' => 'Title',
+    'description' => 'Description',
+    'save_button' => 'Save',
+    'image' => 'Image',
+    'list_course' => 'List Course',
+    'action' => 'Action',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'edit_course' => 'Edit Course',
     'user' => 'User',
     'add' => 'Add',
     'list' => 'List',

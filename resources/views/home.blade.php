@@ -8,47 +8,25 @@
             </div>
         </div>
         <div class="row pt-2">
-            <div class="col-md-4">
-                <div class="card course">
-                    <a href="#">
-                        <img class="card-img-top" src="{{asset('images/slide1_2.png')}}" alt="Card image cap">
-                    </a>
-                    <div class="card-body">
+            @foreach ($courses as $key => $value)
+                <div class="col-md-3 mb-2">
+                    <div class="card course">
                         <a href="#">
-                            <h5 class="card-title">Card title</h5>
+                            <div class="wrap-img">
+                                <img class="card-img-top" src="{{ asset("storage/upload/courses/$value->image_url") }}">
+                            </div>
                         </a>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                            to additional content. This content is a little bit longer.</p>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">{{ $value->title }}</h5>
+                            </a>
+                            <p class="card-text"> {{ $value->description }} </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card course">
-                    <a href="#">
-                        <img class="card-img-top" src="{{asset('images/slide1_2.png')}}" alt="Card image cap">
-                    </a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h5 class="card-title">Card title</h5>
-                        </a>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card course">
-                    <a href="#">
-                        <img class="card-img-top" src="{{asset('images/slide1_2.png')}}" alt="Card image cap">
-                    </a>
-                    <div class="card-body">
-                        <a href="#">
-                            <h5 class="card-title">Card title</h5>
-                        </a>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
+            @endforeach
+            <div class="col-lg-12 mt-3">
+                {!! $courses->links() !!}
             </div>
         </div>
     </div>

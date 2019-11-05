@@ -8,6 +8,14 @@
     height: 350px;
 }
 
+.width-50 {
+    width: 50px;
+}
+
+.width-200 {
+    width: 200px;
+}
+
 .pic-list {
     display: inline-block;
     width: 100px;
