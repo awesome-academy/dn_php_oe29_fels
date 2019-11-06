@@ -27,4 +27,9 @@ class Question extends Model
     {
         return $this->hasMany(Choice::class,'question_id','id');
     }
+
+    public function answers_correct()
+    {
+        return $this->answer_options()->where('is_correct', config('constants.result.correct'));
+    }
 }

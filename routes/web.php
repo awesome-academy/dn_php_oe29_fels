@@ -21,4 +21,5 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/dashboard', 'HomeController@admin')->name('admin');
     Route::resource('courses', 'Admin\CourseController');
     Route::resource('lessons', 'Admin\LessonController');
+    Route::resource('questions', 'Admin\QuestionController');
 });
