@@ -27,5 +27,9 @@ return [
             'col' => 30,
             'row' => 10,
         ],
+    ],
+    'activity_type' => [
+        'followed' => 1,
+        'learned' => 2,
     ]
 ];
