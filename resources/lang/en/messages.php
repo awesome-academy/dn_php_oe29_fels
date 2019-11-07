@@ -45,6 +45,7 @@ return [
     'add_question' => 'Add Question',
     'content' => 'Content',
     'correct' => 'Correct',
+    'incorrect' => 'Incorrect',
     'option_answer' => 'Option Answer',
     'title_button_add_option' => 'Add new option answer',
     'choose_question' => '-- Choose Question --',
@@ -52,4 +53,10 @@ return [
     'list_question' => 'List Question',
     'answer_correct' => 'Answer Correct',
     'edit_question' => 'Edit Question',
+    'option_answer' => 'Option Answer',
+    'add_option_answer' => 'ADD OPTION ANSWER',
+    'answer' => 'Answer',
+    'list_option_answer' => 'List Option Answer',
+    'status_correct' => 'Correct/Incorrect',
+    'edit_option_answer' => 'Edit Option Answer',
 ];

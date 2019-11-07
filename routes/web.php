@@ -22,4 +22,5 @@ Route::group(['prefix' => 'admin'], function () {
     Route::resource('courses', 'Admin\CourseController');
     Route::resource('lessons', 'Admin\LessonController');
     Route::resource('questions', 'Admin\QuestionController');
+    Route::resource('option-answers', 'Admin\OptionAnswerController');
 });
