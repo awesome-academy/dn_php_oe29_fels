@@ -15,6 +15,13 @@
             <a href="{{ route('lessons.index') }}"> @lang('messages.list') </a>
         </div>
         <button class="dropdown-btn">
+            @lang('messages.question') <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="{{ route('questions.create') }}"> @lang('messages.add') </a>
+            <a href="{{ route('questions.index') }}"> @lang('messages.list') </a>
+        </div>
+        <button class="dropdown-btn">
             @lang('messages.user') <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
