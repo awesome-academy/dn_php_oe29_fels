@@ -20,6 +20,7 @@ return [
         'lesson' => 10,
         'course_front' => 20,
         'question' => 10,
+        'option_answer' => 10,
     ],
     'textarea' => [
         'course' => [
