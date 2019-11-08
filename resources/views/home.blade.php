@@ -11,13 +11,13 @@
             @foreach ($courses as $key => $value)
                 <div class="col-md-3 mb-2">
                     <div class="card course">
-                        <a href="#">
+                        <a href="{{ route('lessons.list-by-course', ['course_id' => $value->id]) }}">
                             <div class="wrap-img">
                                 <img class="card-img-top" src="{{ asset("storage/upload/courses/$value->image_url") }}">
                             </div>
                         </a>
                         <div class="card-body">
-                            <a href="#">
+                            <a href="{{ route('lessons.list-by-course', ['course_id' => $value->id]) }}">
                                 <h5 class="card-title">{{ $value->title }}</h5>
                             </a>
                             <p class="card-text"> {{ $value->description }} </p>

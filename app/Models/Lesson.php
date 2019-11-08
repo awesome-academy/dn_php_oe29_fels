@@ -26,4 +26,9 @@ class Lesson extends Model
     {
         return $this->hasMany(UserLesson::class,'lesson_id','id');
     }
+
+    public function choices()
+    {
+        return $this->hasManyThrough(Choice::class,Question::class,'lesson_id','question_id','id','id');
+    }
 }

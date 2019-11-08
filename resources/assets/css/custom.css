@@ -12,8 +12,32 @@
     width: 50px;
 }
 
+.list-word {
+    width: 42rem;
+}
+
+.show-question {
+    width: 34rem;
+}
+
+.list-lesson {
+    width: 32rem; height: 165px;
+}
+
+.show-result {
+    width:147px;
+}
+
 .width-200 {
     width: 200px;
+}
+
+.start-lesson {
+    width:140px;
+}
+
+.word-list {
+    width:140px;
 }
 
 .pic-list {

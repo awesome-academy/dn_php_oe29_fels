@@ -59,4 +59,10 @@ return [
     'list_option_answer' => 'List Option Answer',
     'status_correct' => 'Correct/Incorrect',
     'edit_option_answer' => 'Edit Option Answer',
+    'word' => 'Word',
+    'meant' => 'Meant',
+    'show_results' => 'Show Results',
+    'start_lesson' => 'Start Lesson',
+    'word_list' => 'Word List',
+    'correct_answer' => 'Correct Answer',
 ];
