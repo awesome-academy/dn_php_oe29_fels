@@ -40,12 +40,12 @@
                         @lang('messages.my_account')
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"> @lang('messages.profile') </a>
-                        <a class="dropdown-item" href="#"> @lang('messages.setting') </a>
-                        <a class="dropdown-item" href="#"> @lang('messages.change_password')</a>
+                        <a class="dropdown-item" href="{{ route('profiles.show')}}"> @lang('messages.profile') </a>
+                        <a class="dropdown-item" href="{{ route('profiles.edit') }}"> @lang('messages.setting') </a>
+                        <a class="dropdown-item" href="{{ route('profiles.change_password') }}"> @lang('messages.change_password')</a>
                         <div class="dropdown-divider"> @lang('messages.logout') </div>
-                        <a class="dropdown-item" href="" id="logout" data-csrf="{{csrf_token()}}">
-                            Logout
+                        <a class="dropdown-item" href="" id="logout" data-csrf="{{ csrf_token() }}">
+                            @lang('messages.logout')
                         </a>
                     </div>
                 </li>

@@ -18,4 +18,14 @@ class Activity extends Model
     {
         return $this->belongsTo(User::class,'user_id','id');
     }
+
+    public function user_action()
+    {
+        return $this->belongsTo(User::class,'action_id','id');
+    }
+
+    public function question()
+    {
+        return $this->belongsTo(Question::class,'action_id','id');
+    }
 }
