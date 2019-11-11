@@ -21,6 +21,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('user-lessons', 'Front\UserLessonController@store')->name('user-lessons.store');
     Route::get('/lesson/{lesson_id}/question', 'Front\LessonController@getEachQuestion')->name('lessons.get-each-question');
     Route::post('/choice', 'Front\ChoiceController@store')->name('choices.store');
+    Route::get('/profile', 'Front\ProfileController@show')->name('profiles.show');
+    Route::get('/profile/edit', 'Front\ProfileController@edit')->name('profiles.edit');
+    Route::put('/profile/update/{id}', 'Front\ProfileController@update')->name('profiles.update');
+    Route::get('/profile/change-password', 'Front\ProfileController@changePassword')->name('profiles.change_password');
+    Route::put('/profile/change-password', 'Front\ProfileController@updateChangePassword')->name('profiles.update_change_password');
+    Route::get('/words', 'Front\WordController@index')->name('words.index');
 });
 
 Route::group(['prefix' => 'admin'], function () {

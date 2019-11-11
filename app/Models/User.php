@@ -31,12 +31,12 @@ class User extends Authenticatable
 
     public function followers()
     {
-        return $this->hasMany(Relationship::class,'follower_id','id');
+        return $this->hasMany(Relationship::class,'followed_id','id');
     }
 
-    public function followeds()
+    public function followings()
     {
-        return $this->hasMany(Relationship::class,'followed_id','id');
+        return $this->hasMany(Relationship::class,'follower_id','id');
     }
 
     public function lessons()
